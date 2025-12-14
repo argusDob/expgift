@@ -7,7 +7,7 @@
   </form>
 </template>
 <script setup lang="ts">
-import { ref } from 'vue'
+import {  ref } from 'vue'
 import { useAuthStore } from '../stores/auth'
 import { useRouter } from 'vue-router'
 const email = ref('user@example.com')
@@ -19,7 +19,7 @@ const router = useRouter()
 async function onLogin(){
   error.value = ''
   const ok = await auth.login(email.value, password.value)
-  if(ok) router.push('/')
+  if(ok) router.push('/home')
   else error.value = 'Invalid credentials'
 }
 </script>
