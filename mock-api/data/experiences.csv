@@ -1,0 +1,4 @@
+id,title,category,price_cents,duration_min,images,short_description
+1,Wine Tasting in Tuscany,food,12900,180,"https://picsum.photos/seed/wine/720/400",Explore Tuscan vineyards.
+2,Skydiving Over the Coast,adventure,24900,60,"https://picsum.photos/seed/sky/720/400",Adrenaline-packed jump.
+3,Private Sushi Workshop,culture,17900,120,"https://picsum.photos/seed/sushi/720/400",Master sushi basics.
