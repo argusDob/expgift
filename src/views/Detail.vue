@@ -6,7 +6,7 @@
       <div>
         <h2 class="title" style="font-size:24px;line-height:32px">{{ item.title }}</h2>
         <p style="color:var(--muted)">{{ item.short_description }}</p>
-        <p><strong>€{{ (item.price_cents/100).toFixed(0) }}</strong> • {{ Math.round(item.duration_min/60) }}h</p>
+        <p><strong>{{ formatPrice(item.price_cents) }}</strong> • {{ formatDuration(item.duration_min) }}</p>
       </div>
     </div>
   </div>
@@ -15,6 +15,8 @@
 import { onMounted, ref } from 'vue'
 import { useRoute } from 'vue-router'
 import { useExperiencesStore } from '../stores/experiences'
+import { formatPrice, formatDuration } from '../utils/formatters'
+
 const route = useRoute()
 const store = useExperiencesStore()
 const item = ref<any|null>(null)
