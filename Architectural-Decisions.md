@@ -137,5 +137,4 @@ Implemented proper request cancellation using `AbortController`:
 2. Admin delete feature with optimistic UI
 3. Error boundary components for better error UX
 4. Loading states for better user feedback
-5. Replace `window.location.href` with proper router navigation
 
